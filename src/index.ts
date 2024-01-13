@@ -23,7 +23,7 @@ server.listen(8080, () => {
     console.log(`Server running on http://localhost:8080/`)
 })
 
-const MONGO_URL = 'mongodb+srv://Sayrikey:Allison1@nodeexpressprojects.hthdf.mongodb.net/TSBACKEND?retryWrites=true&w=majority'
+const MONGO_URL = ''
 mongoose.Promise = Promise
 mongoose.connect(MONGO_URL)
 mongoose.connection.on("error", (error: Error) => console.log(error))
